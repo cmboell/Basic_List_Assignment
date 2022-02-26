@@ -19,8 +19,7 @@ def make_list(num):
         new_entry = get_input()
         # try statement for input validation
         try:
-            float(new_entry)
-            a_list.append(new_entry)
+            a_list.append(float(new_entry))
         except ValueError:
             # if not valid invalid message lets user know it won't be added to the list
             print('Invalid entry, entry not added to the list')
@@ -46,37 +45,37 @@ if __name__ == '__main__':
 """
 Test output results:
 1.)
-Enter a number: 2
-you entered 2
-['2']
+Enter a number: 1.2
+you entered 1.2
+[1.2]
+Enter a number: 2.1
+you entered 2.1
 Enter a number: 1
 you entered 1
-Enter a number: 2
-you entered 2
-['1', '2']
-Enter a number: 3
-you entered 3
-Enter a number: 2
-you entered 2
-Enter a number: 1
-you entered 1
-['3', '2', '1']
+[2.1, 1.0]
+Enter a number: 2.4
+you entered 2.4
+Enter a number: 33
+you entered 33
+Enter a number: .2
+you entered .2
+[2.4, 33.0, 0.2]
+
 2.)
-Enter a number: 3
-you entered 3
-['3']
-Enter a number: 2
-you entered 2
-Enter a number: 1
-you entered 1
-['2', '1']
-Enter a number: e
-you entered e
+Enter a number: 1.2
+you entered 1.2
+[1.2]
+Enter a number: 2.44
+you entered 2.44
+Enter a number: 6.9
+you entered 6.9
+[2.44, 6.9]
+Enter a number: five
+you entered five
 Invalid entry, entry not added to the list
 Enter a number: 5
 you entered 5
-Enter a number: 6
-you entered 6
-['5', '6']
-
+Enter a number: 5.5
+you entered 5.5
+[5.0, 5.5]
 """
